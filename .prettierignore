@@ -1,0 +1,8 @@
+node_modules
+dist
+data
+submission
+test-results
+outputs
+.npm-cache
+package-lock.json
