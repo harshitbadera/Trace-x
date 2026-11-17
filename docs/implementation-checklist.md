@@ -44,9 +44,9 @@ Acceptance: submission HTML works by itself; generated reports are legible and a
 - [x] Final verification: 24 analysis/parser/API tests, four browser checks, TypeScript checking and production build passed. The standalone HTML also passed with networking disabled.
 - [x] Resolve known dependency advisories; installation audit reports zero vulnerabilities.
 - [x] Verify that secrets, uploads, databases, dependencies and test artifacts are excluded from Git.
-- [ ] Create the initial commit, resolving the missing-main-ref error.
-- [ ] Push the reviewed project to the supplied GitHub repository if authentication permits.
-- [ ] Give the user the running local URL, standalone prototype and concise verification results.
+- [x] Created initial commit `7d8b2b8`, resolving the missing-main-ref error.
+- [x] Pushed to `https://github.com/harshitbadera/Trace-x` on `main`; upstream tracking is configured.
+- [x] Handoff: local app at http://127.0.0.1:5173 (`npm run dev`); standalone file `submission/Trace-X-prototype.html` (0.79 MB); 24 automated core tests and four browser checks passed.
 
 ## Later milestones requiring additional data or separate scope
 
