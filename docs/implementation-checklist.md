@@ -52,8 +52,8 @@ Acceptance: submission HTML works by itself; generated reports are legible and a
 
 Initial-round package prepared on 21 November 2026:
 
-- [x] Created a 12-slide action-plan PDF accepted by the presentation upload slot.
-- [x] Created an eight-screen wireframe PDF using the working synthetic demo.
+- [x] Created the 12-slide action plan, then replaced its rejected PDF with an editable PPTX.
+- [x] Created eight wireframe screens, then replaced the rejected PDF with a combined static PNG.
 - [x] Rebuilt the standalone HTML and verified the exact file offline without external requests.
 - [x] Reran all 24 core tests and inspected every PDF page, including repaired captures.
 - [x] Checked that every upload file is below 25 MB and added an upload guide in `submission/initial-round/`.

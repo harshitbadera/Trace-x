@@ -14,11 +14,11 @@ The completed upload package is in `submission/initial-round/`:
 
 | Portal slot              | File                      | Contents                                                                                  |
 | ------------------------ | ------------------------- | ----------------------------------------------------------------------------------------- |
-| Action plan presentation | `Trace-X-Action-Plan.pdf` | 12 slides covering the problem, implementation, architecture, validation and 24-hour plan |
-| Wireframe                | `Trace-X-Wireframes.pdf`  | Eight annotated screens captured from the working app using synthetic data                |
+| Action plan presentation | `Trace-X-Action-Plan.pptx` | 12 slides covering the problem, implementation, architecture, validation and 24-hour plan |
+| Wireframe                | `Trace-X-Wireframes.png`  | Eight annotated screens captured from the working app using synthetic data                |
 | HTML prototype           | `Trace-X-Prototype.html`  | Self-contained interactive preview tested with networking disabled                        |
 
-`UPLOAD-GUIDE.txt` explains the upload steps. Each file is below 25 MB. The presentation slot explicitly accepts PDF, so a separate PPTX is unnecessary. Upload the HTML directly; no ZIP is required. The package has not been submitted to the portal.
+`UPLOAD-GUIDE.txt` explains the upload steps. Each file is below 25 MB. The portal rejected the initial PDFs. Use the replacement PPTX and PNG files. The PPTX contains editable text and embedded screenshots without macros or external relationships; the PNG combines all eight wireframe screens. Upload the HTML directly; no ZIP is required. The package has not been submitted to the portal.
 
 Preparation checks on 21 November: 24 core tests passed, the standalone investigation workflow passed offline without external requests, and both PDFs were rendered for page-by-page visual review. The four browser regression checks also passed in the 17 November project baseline.
 
@@ -60,3 +60,5 @@ Recommended accompanying presentation narrative:
 - Winning is not guaranteed; the submission emphasizes demonstrable completeness, explanation, useful interaction and honest scope.
 
 Confirm the rules for prebuilt-code reuse in the 24-hour final before representing this implementation as eligible for that stage.
+
+Portal compatibility update: `scripts/prepare-portal-replacements.py` records the existing deck content and assembles the PNG. `scripts/export-portal-powerpoint.ps1` exports editable slides through installed Microsoft PowerPoint. Both replacements were visually reviewed; the PPTX passed the structural integrity check. Portal acceptance still requires the user to upload them.
