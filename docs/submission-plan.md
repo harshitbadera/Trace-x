@@ -10,6 +10,20 @@ Trace-X addresses the investigator's three linked tasks: normalize fragmented st
 
 ## Initial artifact
 
+The completed upload package is in `submission/initial-round/`:
+
+| Portal slot              | File                      | Contents                                                                                  |
+| ------------------------ | ------------------------- | ----------------------------------------------------------------------------------------- |
+| Action plan presentation | `Trace-X-Action-Plan.pdf` | 12 slides covering the problem, implementation, architecture, validation and 24-hour plan |
+| Wireframe                | `Trace-X-Wireframes.pdf`  | Eight annotated screens captured from the working app using synthetic data                |
+| HTML prototype           | `Trace-X-Prototype.html`  | Self-contained interactive preview tested with networking disabled                        |
+
+`UPLOAD-GUIDE.txt` explains the upload steps. Each file is below 25 MB. The presentation slot explicitly accepts PDF, so a separate PPTX is unnecessary. Upload the HTML directly; no ZIP is required. The package has not been submitted to the portal.
+
+Preparation checks on 21 November: 24 core tests passed, the standalone investigation workflow passed offline without external requests, and both PDFs were rendered for page-by-page visual review. The four browser regression checks also passed in the 17 November project baseline.
+
+The package sources are `scripts/capture-submission.mjs`, `scripts/build-initial-round.py` and `scripts/render-initial-round.mjs`. Capture against an isolated local demo at port 5174. The PDF builder uses ReportLab and pypdf installed under `tmp/pdf-deps` and the local Windows Arial fonts. Generated files and temporary captures remain outside Git.
+
 Generate `submission/Trace-X-prototype.html` with `npm run package:submission`. It is a self-contained interactive preview, with embedded synthetic data and bundled fonts. It is clearly distinguished from the local application that performs ingestion, persistence, public lookups and generated exports.
 
 Recommended accompanying presentation narrative:

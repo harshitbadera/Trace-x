@@ -50,6 +50,17 @@ Acceptance: submission HTML works by itself; generated reports are legible and a
 
 ## Later milestones requiring additional data or separate scope
 
+Initial-round package prepared on 21 November 2026:
+
+- [x] Created a 12-slide action-plan PDF accepted by the presentation upload slot.
+- [x] Created an eight-screen wireframe PDF using the working synthetic demo.
+- [x] Rebuilt the standalone HTML and verified the exact file offline without external requests.
+- [x] Reran all 24 core tests and inspected every PDF page, including repaired captures.
+- [x] Checked that every upload file is below 25 MB and added an upload guide in `submission/initial-round/`.
+- [ ] User upload and final portal submission before 24 November, 11:59 pm IST. The assistant has not submitted the package.
+
+Remaining engineering milestones:
+
 - [ ] Adapt and validate against R4C's actual statement formats when supplied.
 - [ ] Add OCR only if scanned statements require it; retain source-image references and review confidence.
 - [ ] Add statement-period coverage and balance reconciliation against supplied opening/closing balances.
